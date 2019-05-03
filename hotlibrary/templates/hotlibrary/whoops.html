@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container " style="width: 55rem;">
+    <div class="row text-center">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+                     <h2 class="text-danger">If you are viewing this page, it means that you do not have enough permissions to access this page.</h2>
+  <p class="lead">Please login with an account that has uploading privileges!!</p><br>
+             </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+      <div class="text-center">
+         <a href="{% url 'login' %}" class="btn btn-primary btn-sm" role="button">Proceed to Login</a>
+    </div>
+        </div>
+
+    </div>
+
+</div>
+
+  </div>
+
+
+
+
+{% endblock %}

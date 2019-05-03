@@ -1,0 +1,69 @@
+<!-- About us section -->
+{%extends 'base.html'%}
+{% block content %}
+{% load static %}
+<div class="containers padding">
+	<section class="header1 cid-qyvisAZ1Bw" id="About" data-rv-view="758">
+  <div class="container-fluid padding">
+    <div class="row justify-content-md-center">
+      <div class="mbr-white col-md-10">
+        <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-5">"Alone we can do so little, together we can do so much." --Helen Keller</h1>
+        <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-4">MEET OUR TEAM</h3>
+        <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">
+          We are all very different. We were born in different cities, at different times, we love different music,
+          food, movies. But we have something that unites us all. It is the ability to identify a Problem and Solve it. We are a company. We are its heart.
+          We are not just a team, we are a family.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card border-info">
+          <div class="user_image">
+              <img src='{% static "img/team1.png" %}' alt="Emmanuel" title="" media-simple="true">
+          </div>
+            <div class="card-body">
+              <h4 class="card-title">Emmanuel Atemba</h4>
+              <p class="card-text">Emmanuel is a third Year Student</p>
+              <!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-info">
+          <div class="user_image">
+              <img src='{% static "img/team2.png" %}' alt="Grace" title="" media-simple="true">
+          </div>
+            <div class="card-body">
+              <h4 class="card-title">Grace Mbira</h4>
+              <p class="card-text">Grace is a third Year Student</p>
+              <!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-info">
+          <div class="user_image">
+              <img src='{% static "img/team3.png" %}' alt="John" title="" media-simple="true">
+          </div>
+            <div class="card-body">
+              <h4 class="card-title">John Kamau</h4>
+              <p class="card-text">John is a third Year Student</p>
+              <!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+    <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-5" id="connect" >We are change makers, Filling gaps in education sector through Technology.</h1>
+</section>
+</div>
+
+	{% block footer %}
+	{% include 'snippets/footer.html' %}
+	{% endblock %}
+{% endblock %}

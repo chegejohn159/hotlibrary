@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% block style_code %}
+<style>
+    .containers {
+    margin-top:8rem;
+    }
+    body{
+    background-color: #A3D8F1
+    }
+    footer{
+    margin-top:-0.8rem
+    }
+
+</style>
+{% endblock style_code %}
+
+{% block content %}
+<div class="containers">
+    {% if form.non_field_errors %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      {% for error in form.non_field_errors %}
+        <p>{% if forloop.last %} class="mb-0"{% endif %}>{{ error }}</p>
+      {% endfor %}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  {% endif %}
+<div class="container">
+
+      <h2>Create a free account</h2>
+        <form method="post" style="width:50rem; background-color: #9becf7; padding:15px">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        {{ form.username|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ form.email|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.password1|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ form.password2|as_crispy_field }}
+      </div>
+    </div>
+            <div class="text-right">
+                 <button type="submit" class="btn btn-info">SIGNUP</button>
+            </div>
+
+  </form>
+
+</div>
+        </div>
+
+{% include 'snippets/footer.html' %}
+{% endblock %}
+
+

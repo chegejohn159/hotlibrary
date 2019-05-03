@@ -1,0 +1,25 @@
+{% include 'snippets/navbar.html' %}
+{% load static %}
+{% block style_code %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	{% include 'snippets/css.html' %}
+{% endblock style_code %}
+
+{% block content %}
+<form action="">
+    <div class="card col-10" style="width: 24rem; margin-right: 2rem">
+    <div class="row">
+        <div class="col-12">
+          <button class="btn btn-outline-danger btn-block">Goodbye, </button>
+    </div>
+            <div class="col-12 text-center">
+           <a href="{% url 'login'%}">I want to Login again.</a>
+    </div>
+    </div>
+</div>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,113 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<style>
+    .containers{
+    background-color: #A3D8F1;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom:0px
+    margin-bottom: 0px;
+    }
+    .card{
+    background-color: #A3D8F1;
+
+    border: #A3D8F1
+
+}
+</style>
+{% load static %}
+  <div class="container-fluids">
+    <div class="center-page-content-wrapper"><div class="offscreen-overflow-custom-spacing-wrapper">
+      <div class="_1145-content-wrapper">
+        <div data-w-id="bf4cece6-6c5f-aeb9-8ac9-a7fc7466d258" class="large-offscreen-graphic-row graphic-right">
+          <div class="flex-text-left _430 _100-percent">
+            <div class="spacing-wrapper-xxlarge">
+              <h2 data-ix="new-hw-an-see-hw-play" class="proxima-a">
+                Experience the Finest way of sharing resources</h2>
+              </div>
+              <div class="spacing-wrapper-medium">
+                <h4>Reliable and Multi-purpose than any other Learning Application</h4>
+              </div><div class="home-combined-chart-right mobile">
+                <img src='{% static "img/onetwo.svg" %}' data-ix="hw-an-play-video-show-modal" alt="" class="home-combined-chart-offscreen">
+              </div>
+              <div class="spacing-wrapper-large">
+                <p>
+                  Sharing lecture notes and resources using WhatsApp is a huge pain. You need
+                  to scroll through unnecessary messages to get to the document. The file size
+                  limit is annoying. On the othe hands, Flash disks are prone malicious programs,
+                  this aint cool. With HotLib Application you will Experience awesoness like no other,
+                  all the resources are uploaded to the server and fetched by students using Maseno HotLib App
+                  installed on their devices; Its Ease, Convinient and Multi-purpose.
+                </p>
+              </div>
+              <div class="spacing-wrapper">
+                <a href="#"
+                class="btn btn-primary-outline display-4">
+                Fast and Free. Get Started</a>
+              </div>
+            </div>
+            <div class="home-combined-chart-right">
+              <img src='{% static "img/onetwo.svg" %}' data-ix="hw-an-play-video-show-modal" alt="" class="home-combined-chart-offscreen">
+              <div class="homw-hw-combined-background"><div class="home-combined-charts-backgrounds">
+              </div>
+              <div class="home-combined-charts-backgrounds green">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="containers padding" id="cards">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="card " >
+        <div class="card-header text-success text-center" style="font-size: 18px; font-family: 'Aclonica';">Lecture Notes</div>
+        <div class="card-body" style="font-size: 16px;text-align:justify">
+          Are you a Lecturer in Maseno University? Are you stranded on which platform
+          to use to send notes and assignments to your students?
+          Look no more..Introducing Maseno HotLib Application, which allows Lecturers to upload notes, assignments and CATS
+          for students to access and download using their <a href="/android/">Maseno HotLib android application.</a>
+          Its Reliable and Convinient.
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="card ">
+        <div class="card-header text-success text-center" style="font-size: 18px; font-family: 'Aclonica';">Past Papers</div>
+        <div class="card-body" style="font-size: 16px; text-align:justify" >
+          Are you a Librarian having hard time dealing with congestions in the library.
+          We've have brough great things to you. We've made your work easier that it seems,
+          Upload pastpapers through this web Application, for students to access and download
+          them using their android application. No more congestions,<br>
+          Its Easy and Fast.
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="card ">
+        <div class="card-header text-success text-center" style="font-size: 18px; font-family: 'Aclonica';">More Features</div>
+        <div class="card-body" style="font-size: 16px; text-align:justify">
+          Experience inifinity of learning resources from videos,
+          PDfs, links and How to find features in the HotLib android Application.
+          Exclusively solve challenges and track your journey from beginner level to expert level
+          in any programming language of your choice. Ask and Answer questions in the Academic Forum
+          and Learn more everyday. Help and Learn from others paradigm.
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+    {% include 'snippets/footer.html' %}
+
+</div>
+
+{% endblock %}

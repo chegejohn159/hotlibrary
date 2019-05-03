@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <br><br>
+    <div class="row text-center">
+        <div class="col-12 justify-text-center">
+        <h2>Welcome to the Maseno HotLibrary Admin Upload Section <span class="icon-emo-happy"></span></h2>
+  <p class="lead text-center">
+      You are required to select a category to upload the resources of your choosing. Please make sure you upload the
+      right content at the right location.
+      <br><br>
+  </p>
+        </div>
+        <div class="col-3">
+            <a href="{% url 'admins:tutorials' %}" class="btn btn-success btn-lg" role="button">Tutorial Upload</a>
+        </div>
+          <div class="col-3">
+             <a href="{% url 'admins:resources' %}" class="btn btn-warning btn-lg" role="button">Resource Upload</a>
+        </div>
+          <div class="col-3">
+              <a href="{% url 'admins:challenges' %}" class="btn btn-primary btn-lg" role="button">Challenges Upload</a>
+        </div>
+         <div class="col-3">
+            <a href="{% url 'admins:howtos' %}" class="btn btn-info btn-lg" role="button">How To Pack</a>
+        </div>
+    </div>
+
+</div>
+
+  <hr>
+<p>Thank you.</p>
+
+{% endblock %}
